@@ -2,4 +2,16 @@ Building pipeline:
 1.create git repo and then clone to local repo
 2.add src folder along with all components(run them individually)
 3.add data, models, reports directories to .gitignore file
-4.src folder > data_ingestion.py > data_preprocessing.py > feature_engineering.py > model_building.py
+4.src folder > data_ingestion.py > data_preprocessing.py > feature_engineering.py > model_building.py > model_evaluation.py
+5. after adding all the components
+6. In the .gitignore file add data, models, reports folders(because we will use dvc for tracking them)
+7.git add.commit and push the remaining code
+
+================================================================
+Automate the steps using dvc
+1. first initialize dvc "dvc init"
+2. then make a "dvc.yaml" file which is used to automate
+3. to run the yaml file use "dvc repro"
+4. for visualizing the stages use "dvc dag"
+5. "dvc.lock file will be created and the id's in it can be used for further"
+6. push changes in code to the github
