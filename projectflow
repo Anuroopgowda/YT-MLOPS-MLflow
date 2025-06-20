@@ -36,3 +36,9 @@ def load_params(params_path: str) -> dict:
     except Exception as e:
         logger.error('Unexpected error: %s', e)
 3. do changes in the required .py files with parameters
+======================================================================
+FOR DOING EXPERIMENT
+1. we use the dvclive to track the experiment
+2.  change the parameters in params.yaml and run "dvc exp run"
+3. we can remove the experiment if i dont need it
+4. if i want to apply the good exp code then "dvc exp apply <exp_name>"
