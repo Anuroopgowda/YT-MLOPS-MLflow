@@ -1,0 +1,5 @@
+Building pipeline:
+1.create git repo and then clone to local repo
+2.add src folder along with all components(run them individually)
+3.add data, models, reports directories to .gitignore file
+4.src folder > data_ingestion.py > data_preprocessing.py > feature_engineering.py > model_building.py
